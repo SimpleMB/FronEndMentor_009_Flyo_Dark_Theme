@@ -11,8 +11,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
@@ -122,21 +125,24 @@
             alt="pople working"
             class="productive__image"
           />
-          <h2 class="productive__title">Stay productive, wherever you are</h2>
-          <p class="productive__text">
-            Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs.
-          </p>
-          <p class="productive__text">
-            Securely share files and folders with friends, family and colleagues
-            for live collaboration. No email attachments required.
-          </p>
-          <a href="" class="productive__link"
-            >See how Fylo works <img
-              src="./images/icon-arrow.svg"
-              alt="arrow right"
-              class="link__icon"
-          /></a>
+          <div class="productive__container">
+            <h2 class="productive__title">Stay productive, wherever you are</h2>
+            <p class="productive__text">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="productive__text">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+            <a href="" class="productive__link"
+              >See how Fylo works
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow right"
+                class="link__icon"
+            /></a>
+          </div>
         </section>
         <section class="quotes">
           <img
@@ -144,60 +150,62 @@
             alt="quote icon"
             class="quotes__icon"
           />
-          <article class="quote">
-            <blockquote class="quote__text">
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </blockquote>
-            <section class="quote__author author">
-              <img
-                src="./images/profile-1.jpg"
-                alt="author image"
-                class="author__image"
-              />
-              <section class="author__credentials">
-                <h3 class="author__name">Satish Patel</h3>
-                <p class="author__info">Founder & CTO, Huddle</p>
+          <div class="quotes__container">
+            <article class="quote">
+              <blockquote class="quote__text">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </blockquote>
+              <section class="quote__author author">
+                <img
+                  src="./images/profile-1.jpg"
+                  alt="author image"
+                  class="author__image"
+                />
+                <section class="author__credentials">
+                  <h3 class="author__name">Satish Patel</h3>
+                  <p class="author__info">Founder & CTO, Huddle</p>
+                </section>
               </section>
-            </section>
-          </article>
-          <article class="quote">
-            <blockquote class="quote__text">
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </blockquote>
-            <section class="quote__author author">
-              <img
-                src="./images/profile-2.jpg"
-                alt="author image"
-                class="author__image"
-              />
-              <section class="author__credentials">
-                <h3 class="author__name">Bruce McKenzie</h3>
-                <p class="author__info">Founder & CEO, Huddle</p>
+            </article>
+            <article class="quote">
+              <blockquote class="quote__text">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </blockquote>
+              <section class="quote__author author">
+                <img
+                  src="./images/profile-2.jpg"
+                  alt="author image"
+                  class="author__image"
+                />
+                <section class="author__credentials">
+                  <h3 class="author__name">Bruce McKenzie</h3>
+                  <p class="author__info">Founder & CEO, Huddle</p>
+                </section>
               </section>
-            </section>
-          </article>
-          <article class="quote">
-            <blockquote class="quote__text">
-              Fylo has improved our team productivity by an order of magnitude.
-              Since making the switch our team has become a well-oiled
-              collaboration machine.
-            </blockquote>
-            <section class="quote__author author">
-              <img
-                src="./images/profile-3.jpg"
-                alt="author image"
-                class="author__image"
-              />
-              <section class="author__credentials">
-                <h3 class="author__name">Iva Boyd</h3>
-                <p class="author__info">Founder & CFO, Huddle</p>
+            </article>
+            <article class="quote">
+              <blockquote class="quote__text">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </blockquote>
+              <section class="quote__author author">
+                <img
+                  src="./images/profile-3.jpg"
+                  alt="author image"
+                  class="author__image"
+                />
+                <section class="author__credentials">
+                  <h3 class="author__name">Iva Boyd</h3>
+                  <p class="author__info">Founder & CFO, Huddle</p>
+                </section>
               </section>
-            </section>
-          </article>
+            </article>
+          </div>
         </section>
         <section class="call-to-action">
           <h2 class="call-to-action__title">Get early access today</h2>
@@ -211,13 +219,19 @@
               class="call-to-action__input input"
               placeholder="email@example.com"
             />
-            <button class="call-to-action__btn btn">Get Started For Free</button>
+            <button class="call-to-action__btn btn">
+              Get Started For Free
+            </button>
           </form>
         </section>
       </main>
       <footer class="footer">
         <section class="footer__logo footer-logo">
-          <img src="./images/logo.svg" alt="company logo" class="footer-logo__image" />
+          <img
+            src="./images/logo.svg"
+            alt="company logo"
+            class="footer-logo__image"
+          />
         </section>
         <section class="footer__address address">
           <img src="./images/icon-location.svg" alt="" class="address__icon" />
@@ -267,13 +281,25 @@
         </section>
         <section class="social-media">
           <a href="" class="social-media__link">
-            <img src="./images/icon-facebook.svg" alt="facebook" class="social-media__image" />
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook"
+              class="social-media__image"
+            />
           </a>
           <a href="" class="social-media__link">
-            <img src="./images/icon-twitter.svg" alt="twitter" class="social-media__image" />
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter"
+              class="social-media__image"
+            />
           </a>
           <a href="" class="social-media__link">
-            <img src="./images/icon-instagram.svg" alt="instagram" class="social-media__image" />
+            <img
+              src="./images/icon-instagram.svg"
+              alt="instagram"
+              class="social-media__image"
+            />
           </a>
         </section>
       </footer>

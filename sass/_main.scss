@@ -7,6 +7,9 @@
   padding: 0 30px;
   background-color: $primary-headerblue-color;
   position: relative;
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 150px;
+  }
   &::before {
     content: "";
     display: block;
@@ -16,24 +19,49 @@
     height: 300px;
     width: 100%;
     background: url("../images/bg-curvy-mobile.svg") 0 0/100% 30% no-repeat, linear-gradient(left, $primary-mainblue-color, $primary-mainblue-color) 0 100%/100% 70% no-repeat;
+    @media screen and (min-width: $desktop-width) {
+      height: 400px;
+      background: url("../images/bg-curvy-mobile.svg") 0 0/100% 100% no-repeat;
+    }
   }
   & > * {
     position: relative;
+    @media screen and (min-width: $tablet-width) {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: $desktop-width) {
+      max-width: 800px;
+      width: 60%;
+      margin: 0 auto;
+    }
   }
   &__image {
     padding-bottom: 30px;
     width: 100%;
+    @media screen and (min-width: $desktop-width) {
+      padding-bottom: 70px;
+    }
   }
   &__title {
     font-size: 24px;
     line-height: 1.5;
+    @media screen and (min-width: $desktop-width) {
+      font-size: 40px;
+    }
   }
   &__text {
     padding: 30px 10px;
     line-height: 1.5;
+    @media screen and (min-width: $desktop-width) {
+      padding: 50px 10px 30px;
+      font-size: 20px;
+      max-width: 650px;
+    }
   }
   &__btn {
-    width: 75%;
+    width: 70%;
+    max-width: 300px;
   }
 }
 
@@ -41,7 +69,19 @@
   display: grid;
   grid-template-columns: 100%;
   padding: 50px 30px;
-  
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+    padding: 0px 30px 150px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  > * {
+    @media screen and (min-width: $tablet-width) {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .feature {
@@ -49,6 +89,10 @@
   text-align: center;
   &__image {
     width: 20%;
+    @media screen and (min-width: $desktop-width) {
+      height: 75px;
+      width: auto;
+    }
   }
   &__title {
     padding: 35px 0 15px;
@@ -60,26 +104,55 @@
 }
 
 .productive {
-  display: grid;
-  grid-template-columns: 100%;
-  justify-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 30px;
+  @media screen and (min-width: $tablet-width) {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: initial;
+    width: 90%;
+    margin: 0 auto;
+  }
   &__image {
     width: 100%;
+    @media screen and (min-width: $desktop-width) {
+      width: 50%;
+    }
+  }
+  &__container {
+    @media screen and (min-width: $desktop-width) {
+      width: 45%;
+    }
   }
   &__title {
     padding: 40px 0 0;
     font-size: 18px;
+    @media screen and (min-width: $desktop-width) {
+      font-size: 40px;
+      width: 400px;
+    }
   }
   &__text {
     padding: 20px 0 0;
     line-height: 1.7;
+    @media screen and (min-width: $desktop-width) {
+      font-size: 16px;
+    }
   }
   &__link {
+    align-self: flex-end;
     font-size: 12px;
     text-decoration: none;
     color: $accent-cyan-color;
     padding: 5px 0;
+    margin-top: 15px;
     border-bottom: 1px solid;
     display: flex;
     align-items: center;
@@ -87,22 +160,49 @@
       height: 17px;
       margin-left: 5px;
     }
+    @media screen and (min-width: $desktop-width) {
+      max-width: 170px;
+      font-size: 16px;
+    }
   }
 }
 
 .quotes {
-  padding: 150px 50px 0px;;
+  padding: 150px 50px 0px;
+  @media screen and (min-width: $desktop-width) {
+    padding: 150px 150px 0;
+  }
   &__icon {
     width: 10%;
+    max-width: 50px;
+    @media screen and (min-width: $desktop-width) {
+      width: 70px;
+      max-width: initial;
+      transform: translate(-10px, 15px);
+    }
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: $tablet-width) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 }
 
 .quote {
   background-color: $primary-quotesblue-color;
-  padding: 20px;
+  padding: 25px;
   border-radius: 5px;
   &:not(:last-child) {
     margin-bottom: 25px;
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 40px;
+    }
   }
   &__text {
     padding: 5px 0;
@@ -110,6 +210,10 @@
     font-size: 10px;
     line-height: 2;
     color: #dddddd;
+    @media screen and (min-width: $desktop-width) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
   }
 }
 
@@ -117,6 +221,9 @@
   display: flex;
   align-items: center;
   padding: 10px 0 5px;
+  @media screen and (min-width: $desktop-width) {
+    padding: 20px 0 5px;
+  }
   &__image {
     width: 25px;
     border-radius: 50%;
@@ -137,23 +244,50 @@
   background-color: $primary-headerblue-color;
   text-align: center;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.3);
   transform: translateY(175px);
+  @media screen and (min-width: $tablet-width) {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $desktop-width) {
+    max-width: 850px;
+    padding: 40px 100px;
+  }
   &__title {
     font-size: 16px;
+    @media screen and (min-width: $desktop-width) {
+      font-size: 30px;
+    }
   }
   &__text {
     line-height: 1.7;
     padding: 20px 0 30px;
     color: #dddddd;
+    @media screen and (min-width: $desktop-width) {
+      // font-size: 30px;
+    }
   }
   &__form {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__input {
     text-align: center;
+    @media screen and (min-width: $desktop-width) {
+      flex: 1;
+      margin-right: 20px;
+    }
   }
   &__btn {
     margin-top: 25px;
+    @media screen and (min-width: $desktop-width) {
+      margin-top: 0;
+    }
   }
 }

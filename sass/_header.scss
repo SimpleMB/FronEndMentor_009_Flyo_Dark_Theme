@@ -31,6 +31,9 @@
   }
   &__item {
     padding: 0 5px;
+    @media screen and (min-width: $tablet-width) {
+      margin-left: 15px;
+    }
     @media screen and (min-width: $desktop-width) {
       margin-left: 30px;
     }
@@ -45,9 +48,12 @@
     &:hover {
       background-color: hsl(198, 60%, 50%);
     }
-  }
-  @media screen and (min-width: $tablet-width) {
-    padding: 5px 20px;
-    font-size: 14px;
+    @media screen and (min-width: $tablet-width) {
+      padding: 5px 20px;
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 16px;
+    }
   }
 }

@@ -3,9 +3,19 @@
   flex-direction: column;
   padding: 250px 30px 30px;
   background-color: $primary-footerblue-color;
+  @media screen and (min-width: $tablet-width) {
+    padding: 250px 100px 30px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    flex-flow: row wrap;
+    padding: 250px 100px 100px;
+  }
 }
 
 .footer-logo {
+  @media screen and (min-width: $desktop-width) {
+    width: 100%;
+  }
   &__image {
     width: 180px;
   }
@@ -15,6 +25,10 @@
   padding: 30px 0 10px;
   display: flex;
   align-items: flex-start;
+  @media screen and (min-width: $desktop-width) {
+    flex: 3;
+    padding: 45px;
+  }
   &__icon {
     padding: 5px 20px 0 0;
   }
@@ -26,6 +40,10 @@
 
 .contact {
   margin-bottom: 25px;
+  @media screen and (min-width: $desktop-width) {
+    flex: 2;
+    padding: 40px 10px;
+  }
   & > * {
     display: flex;
     align-items: center;
@@ -38,7 +56,11 @@
 
 .footer {
   &__links {
+    flex: 1;
     padding: 40px 0 0;
+    @media screen and (min-width: $desktop-width) {
+      flex: 1;
+    }
   }
   &__list {
     list-style: none;
@@ -47,26 +69,38 @@
     padding: 5px 0;
   }
   &__link {
-    display: block;
+    // inline-block for hover background display
+    display: inline-block;
     padding: 5px 0;
     text-decoration: none;
     color: white;
     font-size: 16px;
+    @media screen and (min-width: $desktop-width) {
+      padding: 5px 10px;
+      border-radius: 50px;
+      &:hover {
+        background-color: hsl(198, 60%, 50%);
+      }
+    }
   }
 }
 
 .social-media {
-  margin-top : 50px;
+  margin-top: 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  @media screen and (min-width: $desktop-width) {
+    flex: 1;
+    margin-top: 40px;
+  }
   &__link {
     text-decoration: none;
     margin: 5px;
     padding: 5px;
     transition: 0.3s;
     &:hover {
-      transform: scale(1.2)
+      transform: scale(1.2);
     }
   }
 }

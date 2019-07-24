@@ -5,7 +5,7 @@
 .hero {
   text-align: center;
   padding: 0 30px;
-  // background-color: $primary-headerblue-color;
+  background-color: $primary-headerblue-color;
   position: relative;
   &::before {
     content: "";
@@ -13,11 +13,12 @@
     position: absolute;
     bottom: 0px;
     left: 0;
-    height: 350px;
+    height: 300px;
     width: 100%;
-    background: url("../images/bg-curvy-mobile.svg") 0 0/100% 30% no-repeat, linear-gradient(left, $primary-mainblue-color, white) 0 100%/100% 70% no-repeat;
-    
-    z-index: -1;
+    background: url("../images/bg-curvy-mobile.svg") 0 0/100% 30% no-repeat, linear-gradient(left, $primary-mainblue-color, $primary-mainblue-color) 0 100%/100% 70% no-repeat;
+  }
+  & > * {
+    position: relative;
   }
   &__image {
     padding-bottom: 30px;

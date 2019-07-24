@@ -51,7 +51,7 @@ body {
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #1c2431;
+  background-color: #181f2a;
   overflow: hidden;
 }
 
@@ -138,6 +138,7 @@ body {
 .hero {
   text-align: center;
   padding: 0 30px;
+  background-color: #1c2431;
   position: relative;
 }
 
@@ -147,11 +148,14 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0;
-  height: 350px;
+  height: 300px;
   width: 100%;
-  background: url("../images/bg-curvy-mobile.svg") 0 0/100% 30% no-repeat, -webkit-gradient(linear, left top, right top, from(#181f2a), to(white)) 0 100%/100% 70% no-repeat;
-  background: url("../images/bg-curvy-mobile.svg") 0 0/100% 30% no-repeat, linear-gradient(left, #181f2a, white) 0 100%/100% 70% no-repeat;
-  z-index: -1;
+  background: url("../images/bg-curvy-mobile.svg") 0 0/100% 30% no-repeat, -webkit-gradient(linear, left top, right top, from(#181f2a), to(#181f2a)) 0 100%/100% 70% no-repeat;
+  background: url("../images/bg-curvy-mobile.svg") 0 0/100% 30% no-repeat, linear-gradient(left, #181f2a, #181f2a) 0 100%/100% 70% no-repeat;
+}
+
+.hero > * {
+  position: relative;
 }
 
 .hero__image {

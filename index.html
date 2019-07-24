@@ -11,6 +11,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
@@ -27,7 +29,7 @@
       }
     </style>
   </head>
-  <body style="position: relative ;min-height: 100vh">
+  <body>
     <div class="wrapper">
       <header class="header">
         <section class="header__logo logo">
@@ -60,14 +62,14 @@
             Access them wherever you need, share and collaborate with friends
             family, and co-workers.
           </p>
-          button.hero__btn <button>Get Started</button>
+          <button class="hero__btn btn">Get Started</button>
         </section>
         <section class="features">
           <article class="feature">
             <img
               src="./images/icon-access-anywhere.svg"
               alt="pc and phone"
-              class="feture__image"
+              class="feature__image"
             />
             <h3 class="feature__title">Access your files, anywhere</h3>
             <p class="feature__text">
@@ -79,7 +81,7 @@
             <img
               src="./images/icon-security.svg"
               alt="shield"
-              class="feture__image"
+              class="feature__image"
             />
             <h3 class="feature__title">Security you can trust</h3>
             <p class="feature__text">
@@ -92,7 +94,7 @@
             <img
               src="./images/icon-collaboration.svg"
               alt="clock and people"
-              class="feture__image"
+              class="feature__image"
             />
             <h3 class="feature__title">Real-time collaboration</h3>
             <p class="feature__text">
@@ -104,7 +106,7 @@
             <img
               src="./images/icon-any-file.svg"
               alt="files and folder"
-              class="feture__image"
+              class="feature__image"
             />
             <h3 class="feature__title">Store any type of file</h3>
             <p class="feature__text">
@@ -130,7 +132,7 @@
             for live collaboration. No email attachments required.
           </p>
           <a href="" class="productive__link"
-            >See how Fylo works<img
+            >See how Fylo works <img
               src="./images/icon-arrow.svg"
               alt="arrow right"
               class="link__icon"
@@ -198,7 +200,7 @@
           </article>
         </section>
         <section class="call-to-action">
-          <h2 class="call-to-action_title">Get early access today</h2>
+          <h2 class="call-to-action__title">Get early access today</h2>
           <p class="call-to-action__text">
             It only takes a minute to sign up and our free starter tier is
             extremely generous. If you have any questions, our support team
@@ -206,31 +208,31 @@
           </p>
           <form class="call-to-action__form">
             <input
-              class="call-to-action__input"
+              class="call-to-action__input input"
               placeholder="email@example.com"
             />
-            <button class="call-to-action__btn">Get Started For Free</button>
+            <button class="call-to-action__btn btn">Get Started For Free</button>
           </form>
         </section>
       </main>
       <footer class="footer">
-        <section class="footer__logo logo">
-          <img src="./images/logo.svg" alt="company logo" class="logo__image" />
+        <section class="footer__logo footer-logo">
+          <img src="./images/logo.svg" alt="company logo" class="footer-logo__image" />
         </section>
         <section class="footer__address address">
-          <img src="" alt="" class="address__icon" />
-          <p class="adress__text">
+          <img src="./images/icon-location.svg" alt="" class="address__icon" />
+          <p class="address__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </section>
         <section class="footer__contact contact">
           <section class="contact__phone">
-            <img src="" alt="" class="contact__icon" />
+            <img src="./images/icon-phone.svg" alt="" class="contact__icon" />
             <span class="contact__number">+1-543-123-4567</span>
           </section>
           <section class="contact__mail">
-            <img src="" alt="" class="contact__icon" />
+            <img src="./images/icon-email.svg" alt="" class="contact__icon" />
             <span class="contact__email">example@flyo.com</span>
           </section>
         </section>
@@ -265,22 +267,19 @@
         </section>
         <section class="social-media">
           <a href="" class="social-media__link">
-            <img src="./images/" alt="facebook" class="social-media__image" />
+            <img src="./images/icon-facebook.svg" alt="facebook" class="social-media__image" />
           </a>
           <a href="" class="social-media__link">
-            <img src="./images/" alt="twitter" class="social-media__image" />
+            <img src="./images/icon-twitter.svg" alt="twitter" class="social-media__image" />
           </a>
           <a href="" class="social-media__link">
-            <img src="./images/" alt="instagram" class="social-media__image" />
+            <img src="./images/icon-instagram.svg" alt="instagram" class="social-media__image" />
           </a>
         </section>
       </footer>
     </div>
 
-    <div
-      class="attr"
-      style="position: absolute; bottom: 0; left: 0; width: 100%;"
-    >
+    <div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

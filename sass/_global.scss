@@ -1,0 +1,32 @@
+
+html {
+  font-family: $body-font;
+  font-size: 14px;
+  color: $neutral-white-color;
+}
+
+h1, h2, h3, button, input {
+  font-family: $items-font;
+}
+
+.btn:focus, .input:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 15px 30px;
+  color: $neutral-white-color;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  background: $button-gradient-bg;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 0 20px hsla(176, 68%, 64%, 0.5);
+  }
+}
+.input {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+}

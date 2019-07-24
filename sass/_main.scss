@@ -1,0 +1,158 @@
+// .main {
+//   // background-color: $primary-mainblue-color;
+// }
+
+.hero {
+  text-align: center;
+  padding: 0 30px;
+  // background-color: $primary-headerblue-color;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    background: url("../images/bg-curvy-mobile.svg") 0 0/100% 30% no-repeat, linear-gradient(left, $primary-mainblue-color, white) 0 100%/100% 70% no-repeat;
+    
+    z-index: -1;
+  }
+  &__image {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  &__text {
+    padding: 30px 10px;
+    line-height: 1.5;
+  }
+  &__btn {
+    width: 75%;
+  }
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 50px 30px;
+  
+}
+
+.feature {
+  padding: 50px 0;
+  text-align: center;
+  &__image {
+    width: 20%;
+  }
+  &__title {
+    padding: 35px 0 15px;
+    font-size: 18px;
+  }
+  &__text {
+    line-height: 1.7;
+  }
+}
+
+.productive {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: start;
+  padding: 0 30px;
+  &__image {
+    width: 100%;
+  }
+  &__title {
+    padding: 40px 0 0;
+    font-size: 18px;
+  }
+  &__text {
+    padding: 20px 0 0;
+    line-height: 1.7;
+  }
+  &__link {
+    font-size: 12px;
+    text-decoration: none;
+    color: $accent-cyan-color;
+    padding: 5px 0;
+    border-bottom: 1px solid;
+    display: flex;
+    align-items: center;
+    .link__icon {
+      height: 17px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.quotes {
+  padding: 150px 50px 0px;;
+  &__icon {
+    width: 10%;
+  }
+}
+
+.quote {
+  background-color: $primary-quotesblue-color;
+  padding: 20px;
+  border-radius: 5px;
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  &__text {
+    padding: 5px 0;
+    font-family: $body-font;
+    font-size: 10px;
+    line-height: 2;
+    color: #dddddd;
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 5px;
+  &__image {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  &__name {
+    font-size: 12px;
+  }
+  &__info {
+    font-size: 8px;
+  }
+}
+
+.call-to-action {
+  margin: 0 auto;
+  width: 90%;
+  padding: 40px 30px;
+  background-color: $primary-headerblue-color;
+  text-align: center;
+  border-radius: 10px;
+  transform: translateY(175px);
+  &__title {
+    font-size: 16px;
+  }
+  &__text {
+    line-height: 1.7;
+    padding: 20px 0 30px;
+    color: #dddddd;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    text-align: center;
+  }
+  &__btn {
+    margin-top: 25px;
+  }
+}

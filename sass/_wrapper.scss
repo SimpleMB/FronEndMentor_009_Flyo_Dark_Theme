@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(20, 20, 20)
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $primary-headerblue-color;
+  overflow: hidden;
+}

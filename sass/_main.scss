@@ -147,7 +147,7 @@
     }
   }
   &__link {
-    align-self: flex-end;
+    align-self: center;
     font-size: 12px;
     text-decoration: none;
     color: $accent-cyan-color;
@@ -160,7 +160,8 @@
       height: 17px;
       margin-left: 5px;
     }
-    @media screen and (min-width: $desktop-width) {
+    max-width: 135px;
+    @media screen and (min-width: $tablet-width) {
       max-width: 170px;
       font-size: 16px;
     }
@@ -249,6 +250,7 @@
   @media screen and (min-width: $tablet-width) {
     max-width: 550px;
     margin: 0 auto;
+    transform: translateY(130px);
   }
   @media screen and (min-width: $desktop-width) {
     max-width: 850px;

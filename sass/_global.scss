@@ -23,6 +23,7 @@ h1, h2, h3, button, input {
   transition: all 0.3s;
   &:hover {
     box-shadow: 0 0 20px hsla(176, 68%, 64%, 0.5);
+    cursor: pointer;
   }
 }
 .input {

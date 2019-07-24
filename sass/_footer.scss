@@ -60,6 +60,7 @@
     padding: 40px 0 0;
     @media screen and (min-width: $desktop-width) {
       flex: 1;
+      min-width: 105px;
     }
   }
   &__list {

@@ -710,6 +710,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    min-width: 105px;
   }
 }
 
